@@ -13,12 +13,13 @@
             int currentIndex = 0;
             while(currentIndex < markdown.length()) {
                 int nextOpenBracket = markdown.indexOf("[", currentIndex);
-                System.out.println(nextOpenBracket);
                 int nextCloseBracket = markdown.indexOf("]", nextOpenBracket);
-                System.out.println(nextCloseBracket);
+                if(nextCloseBracket==-1&&nextOpenBracket==-1){
+                    break;
+                }
                 int openParen = markdown.indexOf("(", nextCloseBracket);
                 int closeParen = markdown.indexOf(")", openParen);
-                if(markdown.charAt(nextOpenBracket-1) == '!'){
+                if(nextOpenBracket!=0 && markdown.charAt(nextOpenBracket-1) == '!'){
                     currentIndex = closeParen + 1;
                     continue;
                 }
