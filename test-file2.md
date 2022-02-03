@@ -1,4 +1,3 @@
 # title 
-[link](waim.da)
-![image](sth.png)
-[link](waidnm.da)
+![photos](image1.png)
+[link](something.in)

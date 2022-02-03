@@ -1,1 +1,1 @@
-this is a file that does not contain link. 
+[link12]ghfdugfh
