@@ -28,7 +28,7 @@ public class MarkdownParseTest {
     Path fileName = Path.of("test-file2.md");
 	String contents = Files.readString(fileName);
     ArrayList<String> links = MarkdownParse.getLinks(contents);
-    assertEquals(List.of("something.in"),links);
+    assertEquals(List.of("something.in","something.in"),links);
  }
  @Test 
  public void Testgetlink3()throws IOException{
